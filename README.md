@@ -1,16 +1,16 @@
 # rewind APT repository
 
-Signed APT repository for [rewind](https://github.com/janghotan/rewind),
-served from GitHub Pages at <https://janghotan.github.io/apt/>.
+Signed APT repository for [rewind](https://github.com/tanhank/rewind),
+served from GitHub Pages at <https://tanhank.github.io/apt/>.
 
 ## Install
 
 ```bash
 sudo install -d -m 0755 /etc/apt/keyrings
-curl -fsSL https://janghotan.github.io/apt/rewind-archive-keyring.gpg \
+curl -fsSL https://tanhank.github.io/apt/rewind-archive-keyring.gpg \
   | sudo tee /etc/apt/keyrings/rewind.gpg >/dev/null
 
-echo "deb [signed-by=/etc/apt/keyrings/rewind.gpg] https://janghotan.github.io/apt stable main" \
+echo "deb [signed-by=/etc/apt/keyrings/rewind.gpg] https://tanhank.github.io/apt stable main" \
   | sudo tee /etc/apt/sources.list.d/rewind.list
 
 sudo apt update

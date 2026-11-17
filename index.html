@@ -46,11 +46,11 @@
   <h2>Install on Debian or Ubuntu</h2>
   <pre><span class="comment"># 1. Trust the archive key</span>
 sudo install -d -m 0755 /etc/apt/keyrings
-curl -fsSL https://janghotan.github.io/apt/rewind-archive-keyring.gpg \
+curl -fsSL https://tanhank.github.io/apt/rewind-archive-keyring.gpg \
   | sudo tee /etc/apt/keyrings/rewind.gpg >/dev/null
 
 <span class="comment"># 2. Add the repository</span>
-echo "deb [signed-by=/etc/apt/keyrings/rewind.gpg] https://janghotan.github.io/apt stable main" \
+echo "deb [signed-by=/etc/apt/keyrings/rewind.gpg] https://tanhank.github.io/apt stable main" \
   | sudo tee /etc/apt/sources.list.d/rewind.list
 
 <span class="comment"># 3. Install</span>
@@ -77,7 +77,7 @@ echo 'rewind init fish | source' >> ~/.config/fish/config.fish</pre>
   <h2>Signing key</h2>
   <p class="fingerprint">5E4B 6F8C F986 92B9 3FA0&nbsp; 930E 4B23 A539 82AF 1E48<br>
   rewind archive signing key &lt;janghotan@users.noreply.github.com&gt;</p>
-  <p><a href="rewind-archive-keyring.gpg">Download the keyring</a> · <a href="https://github.com/janghotan/rewind">Source code</a> · <a href="https://github.com/janghotan/rewind/releases">Releases</a></p>
+  <p><a href="rewind-archive-keyring.gpg">Download the keyring</a> · <a href="https://github.com/tanhank/rewind">Source code</a> · <a href="https://github.com/tanhank/rewind/releases">Releases</a></p>
 
   <footer>
     Packages are built from tagged releases and signed with the key above.
