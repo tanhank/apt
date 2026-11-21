@@ -73,3 +73,30 @@ Description: universal undo for destructive shell commands
  A single static binary provides the journal, trash, retention, and
  configuration commands; bash, zsh, and fish hooks make the wrapping invisible.
 
+Package: rewind
+Version: 0.3.0-1
+Architecture: amd64
+Maintainer: tanhank <tanhank@users.noreply.github.com>
+Installed-Size: 4000
+Filename: pool/main/r/rewind/rewind_0.3.0-1_amd64.deb
+Size: 1566168
+MD5sum: 56e517608f7ef34e62f20718f565a605
+SHA1: dd6b28a8431ed8b9a6e0767fdfbec20c01386b93
+SHA256: aa8b2eddfa768992973275557751b028310ff200de55c1c0d200334be9ba4056
+Section: utils
+Priority: optional
+Homepage: https://github.com/tanhank/rewind
+Description: universal undo for destructive shell commands
+ rewind sits between your shell and commands that destroy state. It stages
+ the pre-action state of rm, mv, cp, chmod, chown, git reset --hard,
+ git clean, git checkout, git restore, git branch -D, git commit --amend,
+ git rebase, and git stash drop/clear/pop, runs the real command with
+ unchanged output and exit code, and keeps a local journal so the action
+ can be reversed later.
+ .
+ Undo is resumable and works across commands: one "rewind undo" reverses
+ the most recent destructive operation, and "rewind undo N" reverses the
+ last N. A single binary provides the journal, trash, retention,
+ and configuration commands; bash, zsh, and fish hooks make the wrapping
+ invisible.
+
